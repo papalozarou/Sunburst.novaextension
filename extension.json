@@ -1,0 +1,9 @@
+{
+  "identifier": "loz.Sunburst",
+  "name": "Sunburst",
+  "organization": "Loz Gray",
+  "description": "A shameless copy of the SublimeText 2 Sunburst theme.",
+  "version": "0.5",
+  "categories": ["themes"],
+  "keywords": ["dark", "sunburst", "sublimetext", "legacy"]
+}

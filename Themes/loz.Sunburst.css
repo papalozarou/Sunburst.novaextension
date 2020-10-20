@@ -1,0 +1,404 @@
+/*-----------------------------------------------------------------------------/
+/       _________              ___.                            __   
+/      /   _____/ __ __   ____ \_ |__   __ __ _______  _______/  |_ 
+/      \_____  \ |  |  \ /    \ | __ \ |  |  \\_  __ \/  ___/\   __\
+/      /        \|  |  /|   |  \| \_\ \|  |  / |  | \/\___ \  |  |  
+/     /_______  /|____/ |___|  /|___  /|____/  |__|  /____  > |__|  
+/             \/             \/     \/                    \/        
+/
+/-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------/
+/ Theme attributes
+/-----------------------------------------------------------------------------*/
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: true;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Window attributes
+/-----------------------------------------------------------------------------*/
+meta.window {
+  background-color: #000000;
+  border-color: #474747;
+}
+
+meta.titlebar {
+  color: #f8f8f8;
+  background-color: #000000;
+  border-color: #474747;
+}
+
+meta.titlebar.inactive {
+  color: #949494;
+  background-color: #1e1e1e;
+  border-color: #474747;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Textfield attributes
+/-----------------------------------------------------------------------------*/
+meta.document.textfield {
+  background-color: #2f2f2f;
+  border-color: #1e1e1e;
+}
+
+meta.document.textfield.active {
+  background-color: #474747;
+  border-color: #2f2f2f;
+}
+
+/* meta.textfield {
+    background-color:;
+    border-color:;
+} */
+
+/* meta.textfield.active {
+    background-color:;
+    border-color:;
+} */
+
+/*-----------------------------------------------------------------------------/
+/ Document attributes
+/-----------------------------------------------------------------------------*/
+meta.document {
+  background-color: #000000;
+  border-color: #474747;
+}
+
+meta.text {
+  color: #f8f8f8;
+  /* background-color:; */
+}
+
+meta.text.selected {
+  /* color:; */
+  background-color: #ddf0ff33;
+}
+
+meta.cursor {
+  background-color: #ffffff0d;
+}
+
+meta.indentguide {
+  border-color: #3e3e3e;
+}
+
+meta.gutter {
+  color: #7c7c7c;
+  /* background-color:; */
+}
+
+meta.gutter.selected {
+  color: #f8f8f8;
+  background-colour: #474747;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Language attributes
+/-----------------------------------------------------------------------------*/
+keyword {
+  color: #e28964;
+}
+
+comment {
+  font-style: italic;
+  color: #aeaeae;
+}
+
+processing {
+  color: #afc4db;
+}
+
+declaration {
+  color: #494949;
+}
+
+bracket {
+  color: #f8f8f8;
+}
+
+operator {
+  color: #e28964;
+}
+
+invalid {
+  color: #fd5ff1;
+  background-color: #562d56bf;
+}
+
+value.boolean {
+  color: #e28964;
+}
+
+value.null {
+  font-style: italic;
+  color: #aeaeae;
+}
+
+value.number {
+  color: #3387cc;
+}
+
+value.entity {
+  color: #89bdff;
+}
+
+value.symbols {
+  color: #3387cc;
+}
+
+string {
+  color: #65b042;
+}
+
+string.key {
+  color: #99cf50;
+}
+
+string-template {
+  color: #65b042;
+}
+
+string-template.value {
+  color: #99cf50;
+}
+
+regex {
+  color: #e9c062;
+}
+
+regex.escaped {
+  color: #cf7d34;
+}
+
+cdata {
+  color: #99cf50;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Tag attributes
+/-----------------------------------------------------------------------------*/
+tag {
+  color: #89bdff;
+}
+
+tag.framework {
+  color: #3387cc;
+}
+
+tag.attribute.name {
+  color: #89bdff;
+}
+
+tag.attribute.value {
+  color: #65b042;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Style attributes
+/-----------------------------------------------------------------------------*/
+style {
+  color: #cda869;
+}
+
+style.at {
+  color: #8693a5;
+}
+
+style.selector {
+  color: #9b703f;
+}
+
+style.selector.element {
+  color: #cda869;
+}
+
+style.selector.identifier.id {
+  color: #8b98ab;
+}
+
+style.selector.identifier.class {
+  color: #9b703f;
+}
+
+style.selector.pseudoclass {
+  color: #8f9d6a;
+}
+
+style.selector.pseudoelement {
+  color: #8f9d6a;
+}
+
+style.attribute {
+  color: #c5af75;
+}
+
+style.value {
+  color: #f9ee98;
+}
+
+style.value.number {
+  color: #dd7b3b;
+}
+
+style.value.color {
+  color: #dd7b3b;
+}
+
+style.value.keyword {
+  color: #dd7b3b;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Markdown attributes
+/-----------------------------------------------------------------------------*/
+markup {
+  color: #e9c062;
+}
+
+markup.heading {
+  color: #fedcc5;
+  background-color: #632d04;
+}
+
+markup.line {
+  color: #60a633;
+  background-color: #242424;
+}
+
+markup.bold {
+  font-weight: bold;
+}
+
+markup.italic {
+  font-style: italic;
+}
+
+markup.strikethrough {
+  text-decoration: line-through;
+}
+
+markup.list {
+  color: #e1d4b9;
+}
+
+markup.code {
+  color: #578bb3;
+  background-color: #b1b3ba08;
+}
+
+markup.link {
+  color: #e18964;
+  text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Terminal attributes
+/-----------------------------------------------------------------------------*/
+terminal.black {
+  color: #000000;
+}
+
+terminal.red {
+  color: #c00000;
+}
+
+terminal.green {
+  color: #00c800;
+}
+
+terminal.yellow {
+  color: #f8c800;
+}
+
+terminal.blue {
+  color: #0000c8;
+}
+
+terminal.magenta {
+  color: #c800c8;
+}
+
+terminal.cyan {
+  color: #00c8c8;
+}
+
+terminal.white {
+  color: #f8f8f8;
+}
+
+terminal.bright-black {
+  color: #1f1f1f;
+}
+
+terminal.bright-red {
+  color: #ff0000;
+}
+
+terminal.bright-green {
+  color: #00ff00;
+}
+
+terminal.bright-yellow {
+  color: #ffcf00;
+}
+
+terminal.bright-blue {
+  color: #0000ff;
+}
+
+terminal.bright-magenta {
+  color: #ff00ff;
+}
+
+terminal.bright-cyan {
+  color: #00ffff;
+}
+
+terminal.bright-white {
+  color: #ffffff;
+}
+
+/* Identifiers */
+identifier.type {
+  color: hsb(258, 40%, 87%);
+}
+identifier.constant {
+}
+identifier.global,
+identifier.variable {
+  color: hsb(268, 34%, 100%);
+}
+identifier.property,
+identifier.decorator,
+identifier.function,
+identifier.method {
+  color: hsb(166, 40%, 78%);
+}
+identifier.key {
+  color: hsb(210, 60%, 100%);
+}
+identifier.argument {
+  color: hsb(268, 34%, 100%);
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: hsb(258, 40%, 87%);
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: hsb(210, 10%, 100%);
+}

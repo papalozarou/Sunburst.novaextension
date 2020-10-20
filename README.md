@@ -1,3 +1,3 @@
 # Sunburst
 
-A shameless copy of the SublimeText 2 Sunburst theme.
+Noasis to Stanley Rost's Sunburst TextMate theme.

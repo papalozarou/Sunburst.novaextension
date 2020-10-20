@@ -6,6 +6,7 @@
 /     /_______  /|____/ |___|  /|___  /|____/  |__|  /____  > |__|  
 /             \/             \/     \/                    \/        
 /
+/ Noasis to Stanley Rost's Sunburst TextMate theme.
 /-----------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------/
@@ -38,6 +39,44 @@ meta.titlebar.inactive {
 }
 
 /*-----------------------------------------------------------------------------/
+/ Buttons attributes
+/-----------------------------------------------------------------------------*/
+meta.button {
+  color: #f8f8f8;
+  text-shadow: 0 1px #1367ac;
+  background-color: #3387cc;
+  border-color: #1367ac;
+}
+
+meta.button.disabled {
+  color: #f8f8f8;
+  text-shadow: 0 1px #000000;
+  background-color: #1e1e1e;
+  border-color: #474747;
+}
+
+meta.button.highlighted {
+  color: #f8f8f8;
+  text-shadow: 0 1px #03579c;
+  background-color: #1367ac;
+  border-color: #03579c;
+}
+
+meta.button.selected {
+  color: #f8f8f8;
+  text-shadow: 0 1px #03579c;
+  background-color: #1367ac;
+  border-color: #03579c;
+}
+
+meta.button.highlighted.selected {
+  color: #f8f8f8;
+  text-shadow: 0 1px #03579c;
+  background-color: #1367ac;
+  border-color: #03579c;
+}
+
+/*-----------------------------------------------------------------------------/
 / Textfield attributes
 /-----------------------------------------------------------------------------*/
 meta.document.textfield {
@@ -50,15 +89,15 @@ meta.document.textfield.active {
   border-color: #2f2f2f;
 }
 
-/* meta.textfield {
-    background-color:;
-    border-color:;
-} */
+meta.textfield {
+  background-color: #2f2f2f;
+  border-color: #1e1e1e;
+}
 
-/* meta.textfield.active {
-    background-color:;
-    border-color:;
-} */
+meta.textfield.active {
+  background-color: #474747;
+  border-color: #2f2f2f;
+}
 
 /*-----------------------------------------------------------------------------/
 / Document attributes
@@ -70,16 +109,14 @@ meta.document {
 
 meta.text {
   color: #f8f8f8;
-  /* background-color:; */
 }
 
 meta.text.selected {
-  /* color:; */
-  background-color: #ddf0ff33;
+  background-color: rgba(221, 240, 255, 0.15);
 }
 
 meta.cursor {
-  background-color: #ffffff0d;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 meta.indentguide {
@@ -88,19 +125,19 @@ meta.indentguide {
 
 meta.gutter {
   color: #7c7c7c;
-  /* background-color:; */
+  background-color: #262626;
 }
 
 meta.gutter.selected {
-  color: #f8f8f8;
-  background-colour: #474747;
+  color: #e8e8e8;
+  background-color: #474747;
 }
 
 /*-----------------------------------------------------------------------------/
 / Language attributes
 /-----------------------------------------------------------------------------*/
 keyword {
-  color: #e28964;
+  color: #99cf50;
 }
 
 comment {
@@ -126,7 +163,7 @@ operator {
 
 invalid {
   color: #fd5ff1;
-  background-color: #562d56bf;
+  background-color: rgba(86, 45, 86, 0.75);
 }
 
 value.boolean {
@@ -151,19 +188,19 @@ value.symbols {
 }
 
 string {
-  color: #65b042;
+  color: #99cf50;
 }
 
 string.key {
-  color: #99cf50;
-}
-
-string-template {
   color: #65b042;
 }
 
+string-template {
+  /* color: #99cf50; */
+}
+
 string-template.value {
-  color: #99cf50;
+  /* color: #65b042; */
 }
 
 regex {
@@ -176,6 +213,119 @@ regex.escaped {
 
 cdata {
   color: #99cf50;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Identifier attributes
+/-----------------------------------------------------------------------------*/
+identifier {
+  color: #3387cc;
+}
+
+identifier.type {
+  text-decoration: underline;
+}
+
+identifier.type.class {
+  color: #3387cc;
+}
+
+identifier.type.protocol {
+  color: #99cf50;
+}
+
+identifier.type.enum {
+  color: #99cf50;
+}
+
+identifier.type.union {
+  color: #3387cc;
+}
+
+identifier.type.struct {
+  color: #99cf50;
+}
+
+identifier.global {
+  color: #3387cc;
+}
+
+identifier.variable {
+  color: #f8f8f8;
+}
+
+identifier.constant {
+  color: #3387cc;
+}
+
+identifier.property {
+  color: #f8f8f8;
+}
+
+identifier.decorator {
+  color: #89bdff;
+}
+
+identifier.function {
+  color: #89bdff;
+}
+
+identifier.method {
+  color: #89bdff;
+}
+
+identifier.key {
+  color: #99cf50;
+}
+
+identifier.argument {
+  color: #3387cc;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Definition attributes
+/-----------------------------------------------------------------------------*/
+definition {
+  /* color: #99cf50; */
+}
+
+definition.type {
+  color: #ff0000;
+}
+
+definition.class {
+  color: #ff0000;
+}
+
+definition.package {
+  color: #ff0000;
+}
+
+definition.protocol {
+  color: #ff0000;
+}
+
+definition.enum {
+}
+
+definition.union {
+  color: #ff0000;
+}
+
+definition.struct {
+  color: #ff0000;
+}
+
+definition.property {
+  color: #ff0000;
+}
+
+definition.function {
+  color: #ff0000;
+}
+
+definition.method {
+  color: #ff0000;
 }
 
 /*-----------------------------------------------------------------------------/
@@ -201,11 +351,12 @@ tag.attribute.value {
 / Style attributes
 /-----------------------------------------------------------------------------*/
 style {
-  color: #cda869;
+  /* color: #89bdff; */
 }
 
 style.at {
-  color: #8693a5;
+  /* color: #8693a5; */
+  color: #dd7b3b;
 }
 
 style.selector {
@@ -225,11 +376,13 @@ style.selector.identifier.class {
 }
 
 style.selector.pseudoclass {
-  color: #8f9d6a;
+  /* color: #8f9d6a; */
+  color: #89bdff;
 }
 
 style.selector.pseudoelement {
-  color: #8f9d6a;
+  /* color: #8f9d6a; */
+  color: #89bdff;
 }
 
 style.attribute {
@@ -249,7 +402,7 @@ style.value.color {
 }
 
 style.value.keyword {
-  color: #dd7b3b;
+  color: #f9ee98;
 }
 
 /*-----------------------------------------------------------------------------/
@@ -287,7 +440,7 @@ markup.list {
 
 markup.code {
   color: #578bb3;
-  background-color: #b1b3ba08;
+  background-color: rgba(177, 179, 186, 0.13);
 }
 
 markup.link {
@@ -360,45 +513,4 @@ terminal.bright-cyan {
 
 terminal.bright-white {
   color: #ffffff;
-}
-
-/* Identifiers */
-identifier.type {
-  color: hsb(258, 40%, 87%);
-}
-identifier.constant {
-}
-identifier.global,
-identifier.variable {
-  color: hsb(268, 34%, 100%);
-}
-identifier.property,
-identifier.decorator,
-identifier.function,
-identifier.method {
-  color: hsb(166, 40%, 78%);
-}
-identifier.key {
-  color: hsb(210, 60%, 100%);
-}
-identifier.argument {
-  color: hsb(268, 34%, 100%);
-}
-
-/* Types */
-definition.class class.name,
-definition.type type.name,
-definition.package package.name,
-definition.enum enum.name,
-definition.union union.name,
-definition.struct struct.name {
-  font-weight: bold;
-  color: hsb(258, 40%, 87%);
-}
-
-/* Members */
-definition.property property.name,
-definition.function function.name,
-definition.method method.name {
-  color: hsb(210, 10%, 100%);
 }

@@ -25,6 +25,7 @@ Because we can't have nice things, there are of course a few issues:
 - It's not currently possible to style sub-tags in HTML.
 - Indented SASS comments are borked and I have no idea why.
 - There are a few styles that I haven't gotten around to changing yet, largely because I don't use languages that would use them – these are styled as italic/#ff0000 so they're noticeable when they appear.
+- The examples for the screenshots were copied and pasted from the TextMate theme editor – don't get your panties in a bunch|knickers in a twist (delete as applicable) if there are syntax errors in them.
 
 ## Credits
 

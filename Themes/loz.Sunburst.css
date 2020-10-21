@@ -7,125 +7,132 @@
 /             \/             \/     \/                    \/        
 /
 / Noasis to Stanley Rost's Sunburst TextMate theme.
+/
+/ N.B. Styles that I haven't gotten to yet are styled as italic/#ff0000 so 
+// they're noticeable when they appear.
 /-----------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------/
-/ Theme attributes
+/ Theme styles
 /-----------------------------------------------------------------------------*/
 meta {
   -theme-interface-style: dark;
   -theme-vibrancy: none;
-  -theme-accent-color: true;
+  -theme-accent-color: auto;
 }
 
 /*-----------------------------------------------------------------------------/
-/ Window attributes
+/ Window styles
 /-----------------------------------------------------------------------------*/
 meta.window {
-  background-color: #000000;
+  background-color: #1e1e1e;
   border-color: #474747;
 }
 
 meta.titlebar {
   color: #f8f8f8;
-  background-color: #000000;
+  background-color: #1e1e1e;
   border-color: #474747;
 }
 
 meta.titlebar.inactive {
-  color: #949494;
   background-color: #1e1e1e;
-  border-color: #474747;
 }
 
-/*-----------------------------------------------------------------------------/
-/ Buttons attributes
-/-----------------------------------------------------------------------------*/
 meta.button {
   color: #f8f8f8;
-  text-shadow: 0 1px #1367ac;
-  background-color: #3387cc;
-  border-color: #1367ac;
-}
-
-meta.button.disabled {
-  color: #f8f8f8;
-  text-shadow: 0 1px #000000;
-  background-color: #1e1e1e;
-  border-color: #474747;
+  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
+  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
 }
 
 meta.button.highlighted {
   color: #f8f8f8;
-  text-shadow: 0 1px #03579c;
-  background-color: #1367ac;
-  border-color: #03579c;
+  background: linear-gradient(#699ddf, #377edb);
 }
 
-meta.button.selected {
-  color: #f8f8f8;
-  text-shadow: 0 1px #03579c;
-  background-color: #1367ac;
-  border-color: #03579c;
-}
-
+meta.button.selected,
 meta.button.highlighted.selected {
   color: #f8f8f8;
-  text-shadow: 0 1px #03579c;
-  background-color: #1367ac;
-  border-color: #03579c;
 }
 
-/*-----------------------------------------------------------------------------/
-/ Textfield attributes
-/-----------------------------------------------------------------------------*/
-meta.document.textfield {
-  background-color: #2f2f2f;
-  border-color: #1e1e1e;
-}
-
-meta.document.textfield.active {
-  background-color: #474747;
-  border-color: #2f2f2f;
+meta.button.disabled {
+  color: #787878;
+  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
+  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
 }
 
 meta.textfield {
-  background-color: #2f2f2f;
-  border-color: #1e1e1e;
-}
-
-meta.textfield.active {
-  background-color: #474747;
+  background-color: #353535;
   border-color: #2f2f2f;
 }
 
+meta.accent {
+  color: #99cf50;
+}
+
 /*-----------------------------------------------------------------------------/
-/ Document attributes
+/ Document styles
 /-----------------------------------------------------------------------------*/
 meta.document {
   background-color: #000000;
   border-color: #474747;
 }
 
+meta.document.button {
+  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
+  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
+}
+
+meta.document.button.disabled {
+  color: #787878;
+  background: linear-gradient(hsb(210, 10%, 34%), hsb(210, 10%, 26%));
+  border: linear-gradient(hsb(210, 10%, 18%), hsb(210, 10%, 14%));
+}
+
+meta.document.button.highlighted {
+  color: #f8f8f8;
+  background: linear-gradient(#699ddf, #377edb);
+}
+
+meta.document.textfield {
+  background-color: #353535;
+  border-color: #2f2f2f;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Text styles
+/-----------------------------------------------------------------------------*/
 meta.text {
   color: #f8f8f8;
+}
+
+meta.text.invisible {
+  color: rgba(202, 226, 251, 0.25);
 }
 
 meta.text.selected {
   background-color: rgba(221, 240, 255, 0.15);
 }
 
+/*-----------------------------------------------------------------------------/
+/ Cursor styles
+/-----------------------------------------------------------------------------*/
 meta.cursor {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/*-----------------------------------------------------------------------------/
+/ Indentation styles
+/-----------------------------------------------------------------------------*/
 meta.indentguide {
   border-color: #3e3e3e;
 }
 
+/*-----------------------------------------------------------------------------/
+/ Gutter styles
+/-----------------------------------------------------------------------------*/
 meta.gutter {
   color: #7c7c7c;
-  background-color: #262626;
 }
 
 meta.gutter.selected {
@@ -134,7 +141,7 @@ meta.gutter.selected {
 }
 
 /*-----------------------------------------------------------------------------/
-/ Language attributes
+/ Syntax styles
 /-----------------------------------------------------------------------------*/
 keyword {
   color: #99cf50;
@@ -162,45 +169,90 @@ operator {
 }
 
 invalid {
-  color: #fd5ff1;
+  color: #fd5fff;
   background-color: rgba(86, 45, 86, 0.75);
 }
 
+link {
+  font-style: italic;
+  color: #ff0000;
+}
+
+/*-----------------------------------------------------------------------------/
+/ Value styles
+/-----------------------------------------------------------------------------*/
 value.boolean {
   color: #e28964;
 }
 
 value.null {
-  font-style: italic;
-  color: #aeaeae;
+  color: #377edb;
 }
 
 value.number {
-  color: #3387cc;
+  color: #377edb;
 }
 
 value.entity {
   color: #89bdff;
 }
 
-value.symbols {
-  color: #3387cc;
+value.symbol {
+  color: #377edb;
 }
 
+/*-----------------------------------------------------------------------------/
+/ Identifier styles
+/-----------------------------------------------------------------------------*/
+identifier.type {
+  font-style: italic;
+  color: #ff0000;
+}
+
+identifier.constant {
+  color: #3e87e3;
+}
+
+identifier.global,
+identifier.variable {
+  color: #377edb;
+}
+
+identifier.property,
+identifier.decorator,
+identifier.method {
+  color: #dad085;
+}
+
+identifier.function {
+  color: #89bdff;
+}
+
+identifier.key {
+  color: ##99cf50;
+}
+
+identifier.argument {
+  color: #377edb;
+}
+
+/*-----------------------------------------------------------------------------/
+/ String styles
+/-----------------------------------------------------------------------------*/
 string {
-  color: #99cf50;
-}
-
-string.key {
   color: #65b042;
 }
 
+string.key {
+  color: #99cf50;
+}
+
 string-template {
-  /* color: #99cf50; */
+  color: #99cf50;
 }
 
 string-template.value {
-  /* color: #65b042; */
+  color: #65b042;
 }
 
 regex {
@@ -208,7 +260,7 @@ regex {
 }
 
 regex.escaped {
-  color: #cf7d34;
+  color: #e28964;
 }
 
 cdata {
@@ -216,151 +268,86 @@ cdata {
 }
 
 /*-----------------------------------------------------------------------------/
-/ Identifier attributes
+/ Markup styles
 /-----------------------------------------------------------------------------*/
-identifier {
-  color: #3387cc;
+markup.heading {
+  color: #fedcc5;
+  background-color: #632d04;
 }
 
-identifier.type {
-  text-decoration: underline;
+markup.line {
+  color: #60a633;
+  background-color: #242424;
 }
 
-identifier.type.class {
-  color: #3387cc;
+markup.bold {
+  font-weight: bold;
+  color: #e9c062;
 }
 
-identifier.type.protocol {
-  color: #99cf50;
+markup.italic {
+  font-style: italic;
+  color: #e9c062;
 }
 
-identifier.type.enum {
-  color: #99cf50;
+markup.strikethrough {
+  text-decoration: line-through;
 }
 
-identifier.type.union {
-  color: #3387cc;
+markup.list.item {
+  color: #e1d4b9;
 }
 
-identifier.type.struct {
-  color: #99cf50;
-}
-
-identifier.global {
-  color: #3387cc;
-}
-
-identifier.variable {
-  color: #f8f8f8;
-}
-
-identifier.constant {
-  color: #3387cc;
-}
-
-identifier.property {
-  color: #f8f8f8;
-}
-
-identifier.decorator {
-  color: #89bdff;
-}
-
-identifier.function {
-  color: #89bdff;
-}
-
-identifier.method {
-  color: #89bdff;
-}
-
-identifier.key {
-  color: #99cf50;
-}
-
-identifier.argument {
-  color: #3387cc;
+markup.code {
+  color: #578bb3;
+  background-color: rgba(177, 179, 186, 0.1);
 }
 
 /*-----------------------------------------------------------------------------/
-/ Definition attributes
+/ Types styles
 /-----------------------------------------------------------------------------*/
-definition {
-  /* color: #99cf50; */
-}
-
-definition.type {
-  color: #ff0000;
-}
-
-definition.class {
-  color: #ff0000;
-}
-
-definition.package {
-  color: #ff0000;
-}
-
-definition.protocol {
-  color: #ff0000;
-}
-
-definition.enum {
-}
-
-definition.union {
-  color: #ff0000;
-}
-
-definition.struct {
-  color: #ff0000;
-}
-
-definition.property {
-  color: #ff0000;
-}
-
-definition.function {
-  color: #ff0000;
-}
-
-definition.method {
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: italic;
   color: #ff0000;
 }
 
 /*-----------------------------------------------------------------------------/
-/ Tag attributes
+/ Member styles
 /-----------------------------------------------------------------------------*/
-tag {
-  color: #89bdff;
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  font-weight: italic;
+  color: #ff0000;
 }
 
-tag.framework {
-  color: #3387cc;
-}
-
+/*-----------------------------------------------------------------------------/
+/ Tags styles
+/-----------------------------------------------------------------------------*/
+tag,
 tag.attribute.name {
   color: #89bdff;
 }
 
-tag.attribute.value {
+tag.framework {
+  color: #e0c589;
+}
+
+tag.attribute.value,
+tag.attribute.value.link {
   color: #65b042;
 }
 
 /*-----------------------------------------------------------------------------/
-/ Style attributes
+/ Style, er… styles
 /-----------------------------------------------------------------------------*/
-style {
-  /* color: #89bdff; */
-}
-
 style.at {
-  /* color: #8693a5; */
-  color: #dd7b3b;
-}
-
-style.selector {
-  color: #9b703f;
+  color: #e18964;
 }
 
 style.selector.element {
@@ -375,142 +362,21 @@ style.selector.identifier.class {
   color: #9b703f;
 }
 
-style.selector.pseudoclass {
-  /* color: #8f9d6a; */
-  color: #89bdff;
-}
-
+style.selector.pseudoclass,
 style.selector.pseudoelement {
-  /* color: #8f9d6a; */
-  color: #89bdff;
+  color: #8f9d6a;
 }
 
-style.attribute {
+style.attribute.name {
   color: #c5af75;
 }
 
-style.value {
-  color: #f9ee98;
-}
-
-style.value.number {
+style.value.number,
+style.value.color.hex {
   color: #dd7b3b;
 }
 
-style.value.color {
-  color: #dd7b3b;
-}
-
-style.value.keyword {
+style.value.keyword,
+style.value.color.named {
   color: #f9ee98;
-}
-
-/*-----------------------------------------------------------------------------/
-/ Markdown attributes
-/-----------------------------------------------------------------------------*/
-markup {
-  color: #e9c062;
-}
-
-markup.heading {
-  color: #fedcc5;
-  background-color: #632d04;
-}
-
-markup.line {
-  color: #60a633;
-  background-color: #242424;
-}
-
-markup.bold {
-  font-weight: bold;
-}
-
-markup.italic {
-  font-style: italic;
-}
-
-markup.strikethrough {
-  text-decoration: line-through;
-}
-
-markup.list {
-  color: #e1d4b9;
-}
-
-markup.code {
-  color: #578bb3;
-  background-color: rgba(177, 179, 186, 0.13);
-}
-
-markup.link {
-  color: #e18964;
-  text-decoration: underline;
-}
-
-/*-----------------------------------------------------------------------------/
-/ Terminal attributes
-/-----------------------------------------------------------------------------*/
-terminal.black {
-  color: #000000;
-}
-
-terminal.red {
-  color: #c00000;
-}
-
-terminal.green {
-  color: #00c800;
-}
-
-terminal.yellow {
-  color: #f8c800;
-}
-
-terminal.blue {
-  color: #0000c8;
-}
-
-terminal.magenta {
-  color: #c800c8;
-}
-
-terminal.cyan {
-  color: #00c8c8;
-}
-
-terminal.white {
-  color: #f8f8f8;
-}
-
-terminal.bright-black {
-  color: #1f1f1f;
-}
-
-terminal.bright-red {
-  color: #ff0000;
-}
-
-terminal.bright-green {
-  color: #00ff00;
-}
-
-terminal.bright-yellow {
-  color: #ffcf00;
-}
-
-terminal.bright-blue {
-  color: #0000ff;
-}
-
-terminal.bright-magenta {
-  color: #ff00ff;
-}
-
-terminal.bright-cyan {
-  color: #00ffff;
-}
-
-terminal.bright-white {
-  color: #ffffff;
 }

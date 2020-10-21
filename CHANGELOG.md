@@ -1,4 +1,4 @@
-## Version 1
+## Version 1.0
 
 Well whaddya know? V1.0 c'est arrivé…
 

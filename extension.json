@@ -3,7 +3,7 @@
   "name": "Sunburst",
   "organization": "Loz Gray",
   "description": "Noasis to Stanley Rost's Sunburst TextMate theme.",
-  "version": "0.5",
+  "version": "1.0",
   "categories": ["themes"],
-  "keywords": ["dark", "sunburst", "sublimetext", "legacy"]
+  "keywords": ["dark", "sunburst", "sublimetext", "textmate", "legacy"]
 }

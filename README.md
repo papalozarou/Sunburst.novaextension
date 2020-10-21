@@ -19,7 +19,7 @@ The Noasis of [Nova](http://nova.app) themes: a loving ~rip off~ homage of Stanl
 Because we can't have nice things, there are of course a few issues:
 
 - The [docs for themes](https://docs.nova.app/extensions/themes/) are out of step with the template Nova gives you and it's unclear which is right.
-- The icon is sheiiiiiite. Sorry.
+- The icon is ~sheiiiiiite~ better now.
 - Vibrancy is off because it was doing weird things to the sidebars.
 - There isn't really a 1:1 mapping for some things, so I've had to go with what's best – the most noticeable is what are defined as `keywords` in Nova vs in Textmate/SublimeText.
 - It's not currently possible to style sub-tags in HTML.

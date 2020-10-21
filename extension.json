@@ -5,5 +5,6 @@
   "description": "Noasis to Stanley Rost's Sunburst TextMate theme.",
   "version": "1.0",
   "categories": ["themes"],
-  "keywords": ["dark", "sunburst", "sublimetext", "textmate", "legacy"]
+  "keywords": ["dark", "sunburst", "sublimetext", "textmate", "legacy"],
+  "bugs": "https://github.com/papalozarou/Sunburst.novaextension/issues"
 }

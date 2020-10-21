@@ -4,6 +4,7 @@
   "organization": "Loz Gray",
   "description": "Noasis to Stanley Rost's Oasis of TextMate themes: Sunburst.",
   "version": "1.0",
+  "repository": "https://github.com/papalozarou/Sunburst.novaextension",
   "categories": ["themes"],
   "keywords": ["dark", "sunburst", "sublimetext", "textmate", "legacy"],
   "bugs": "https://github.com/papalozarou/Sunburst.novaextension/issues"

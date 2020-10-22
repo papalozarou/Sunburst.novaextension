@@ -22,7 +22,7 @@ Because we can't have nice things, there are of course a few issues:
 - The icon is ~sheiiiiiite~ better now.
 - Vibrancy is off because it was doing weird things to the sidebars.
 - There isn't really a 1:1 mapping for some things, so I've had to go with what's best – the most noticeable is what are defined as `keywords` in Nova vs in Textmate/SublimeText.
-- It's not currently possible to style sub-tags in HTML.
+- It's not currently possible to style nested in HTML, which you can in Textmate/SublimeText.
 - Indented SASS comments are borked and I have no idea why.
 - There are a few styles that I haven't gotten around to changing yet, largely because I don't use languages that would use them – these are styled as italic/#ff0000 so they're noticeable when they appear.
 - The examples for the screenshots were copied and pasted from the TextMate theme editor – don't get your panties in a bunch|knickers in a twist (delete as applicable) if there are syntax errors in them.
